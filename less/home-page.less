@@ -34,8 +34,38 @@
       }
     }
     @media @phone {
-      .sky, .launch{
-        display:none;
+     .sky, .launch{
+        display:hidden;
+      }
+    }
+    @media @phone {
+      margin-top: 5%;
+      width: 90%;
+      &:hover {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+      }
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      position: relative;
+
+      .blast, .launch{
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left:0;
+        
+      }
+      .blast {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+      .launch{
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
       }
     }
   }
