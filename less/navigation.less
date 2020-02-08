@@ -1,1 +1,29 @@
 // Navigation code here
+
+.navigation {
+    width: 100%;
+    background: @wild-sand;
+    color: @river-bend;
+    .flexC();
+    align-items: center;
+
+    h1 {
+        font-size: 4rem;
+        padding: 1%;
+    }
+    nav {
+        .flex(space-evenly, center);
+        width: 35%;
+
+        a {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: @river-bend;
+            padding: 3%;
+
+            &:hover {
+                color:blue;
+            }
+        }
+    }
+}
